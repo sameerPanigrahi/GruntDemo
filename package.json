@@ -1,0 +1,24 @@
+{
+  "name": "js_practice_examples",
+  "version": "1.0.0",
+  "description": "JavaScript Practice Examples",
+  "main": "sample.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pjs.js",
+    "pjs2.js"
+  ],
+  "author": "sameer panigrahi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^7.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.1.0"
+  }
+}

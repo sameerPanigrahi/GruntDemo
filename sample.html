@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample javascript</title>
+</head>
+<body>
+	<button type="button" id="button1" onclick="handleOnClick()">Action!</button>
+	<p id="demo"></p>
+</body>
+<script>
+	/* eslint-disable */
+	function playGround() {
+		var result;
+		// --------------------------------------------------------------------------------------------------------
+		// This example is explained in detail below (just after this code box).​
+		function celebrityIDCreator(theCelebrities) {
+			var i;
+			var uniqueID = 100;
+			for (i = 0; i < theCelebrities.length; i++) {
+				theCelebrities[i]["id"] = function() {
+					return uniqueID + i;
+				}
+			}
+
+			return theCelebrities;
+		}
+		var actionCelebs = [ {
+			name : "Stallone",
+			id : 0
+		}, {
+			name : "Cruise",
+			id : 0
+		}, {
+			name : "Willis",
+			id : 0
+		} ];
+		var createIdForActionCelebs = celebrityIDCreator(actionCelebs);
+
+		for (var j = 0; j < createIdForActionCelebs.length; j++) {
+			console.log(createIdForActionCelebs[j].id());
+		}
+		if (result == null)
+			result = "success";
+
+		//---------------------------------------------------------------------------------------------------------- 
+		return result;
+	}
+
+	function handleOnClick() {
+		// document.getElementById("demo").innerHTML = playGround();
+		document.getElementById("demo").innerHTML = playGround();
+	}
+</script>
+</html>
